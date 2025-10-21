@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Diet & Exercise Tracker (HTML Only)</title>
+</head>
+<body>
+
+    <table border="1" width="90%" align="center" cellpadding="10" cellspacing="0" bgcolor="#F0F0F0">
+
+        <tr>
+            <td colspan="2" bgcolor="#4CAF50" height="70" align="center">
+                <font color="white" face="Arial">
+                    <h1>Weekly Diet & Exercise Tracker</h1>
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="50%" valign="top" bgcolor="#FFFFFF">
+                <form action="#" method="post">
+
+                    <fieldset>
+                        <legend><strong>Personal Information</strong></legend>
+                        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td width="30%" align="right"><label for="name">Name:</label></td>
+                                <td width="70%"><input type="text" id="name" name="name" size="40" required></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="age">Age:</label></td>
+                                <td><input type="number" id="age" name="age" min="1" max="120" required></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Gender:</label></td>
+                                <td>
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">Other</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Diet Tracking</strong></legend>
+                        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td width="30%" align="right"><label for="diet">Mon Diet (Meals/Calories):</label></td>
+                                <td width="70%"><input type="text" id="diet" name="diet" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="diet">Tue Diet (Meals/Calories):</label></td>
+                                <td><input type="text" id="diet" name="diet" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="water_intake">Daily Water Intake (Liters):</label></td>
+                                <td><input type="number" id="water_intake" name="water_intake" step="0.1" min="0"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Exercise Tracking</strong></legend>
+                        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td width="30%" align="right"><label for="mon_exer">Mon Exercise (Activity/Duration):</label></td>
+                                <td width="70%"><input type="text" id="mon_exer" name="mon_exer" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="tue_exer">Tue Exercise (Activity/Duration):</label></td>
+                                <td><input type="text" id="tue_exer" name="tue_exer" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="goal">Weekly Goal Status:</label></td>
+                                <td>
+                                    <select id="goal" name="goal">
+                                        <option value="started">Not Started</option>
+                                        <option value="track">On Track</option>
+                                        <option value="completed">Completed</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <p align="center">
+                        <input type="submit" value="Submit">
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="reset" value="Reset">
+                    </p>
+
+                </form>
+            </td>
+
+            <td width="50%" valign="top" align="center" bgcolor="#FFFFFF">
+                <h2>The #1 Diet to Lose Fat (FOR GOOD!)</h2>
+                <iframe width="872" height="491" src="https://www.youtube.com/embed/TuRv8gRfvb8" title="How to Lose Fat AND Gain Muscle At The Same Time (Step By Step)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
